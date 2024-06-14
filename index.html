@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Todo list</title>
+  </head>
+  <body class="page">
+    <main class="todo">
+      <h1 class="todo__tittle"></h1>
+
+      <div class="todo__bock">
+        <form class="form">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Добавить заметку"
+          />
+          <button class="form__button">Добавить</button>
+        </form>
+
+        <ul class="todo__list"></ul>
+
+        <template class="item-template">
+          <li class="todo__item">
+            <p class="todo__paragraph"></p>
+            <span class="todo__buttons">
+              <img class="edit" src="./images/Edit.png" alt="редактировать" title="редактировать" />
+              <img class="copy" src="./images/Duplicate.png" alt="копировать" title="копировать" />
+              <img class="delete" src="./images/Delete.png" alt="удалить" title="удалить" />
+            </span>
+            <span class="todo__save">
+              <span class="todo__save-time"></span>
+              <span class="todo__save-date"></span>
+            </span>
+          </li>
+        </template>
+
+      </div>
+      <h2 class="todo__text-info"></h2>
+
+      <div class="todo__popup-alert">
+        <p class="todo__popup-alert-text">При нажатии на текст появится окно с вашей заметкой. В окне можно редактировать текст.</p>
+        <button class="todo__popup-alert-close"></button>
+      </div>
+
+      <div class="todo__popup">
+        <div class="todo__popup-section">
+          <p class="todo__popup-text"></p>
+          <button class="todo__popup-close"></button>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <a href="https://nice-dev.ru/" class="nice-dev" target="_blank">
+        © Nice Dev Web-Studio 2020 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </a>
+    </footer>
+  </body>
+</html>
